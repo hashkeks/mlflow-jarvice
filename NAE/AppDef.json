@@ -23,7 +23,7 @@
 	],
 	"commands": {
 		"GUI": {
-			"path": "/",
+			"path": "/usr/local/scripts/install_miniconda.sh",
 			"interactive": true,
 			"name": "MLflow GUI",
 			"description": "MLflow with Miniconda and Nimbix Desktop",
