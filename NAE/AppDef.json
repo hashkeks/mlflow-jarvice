@@ -1,0 +1,45 @@
+{
+	"name": "MLflow with Miniconda",
+  "description": "MLflow with Miniconda and Nimbix Desktop",
+  "author": "Casper, Cedric",
+  "licensed": false,
+  "classifications": [
+    "Machine Learning"
+  ],
+	"machines": [
+		"",
+    "mc0-eu1-01",
+    "mc0-eu1-02",
+    "mc2-eu1-01",
+    "mc2-eu1-02",
+    "mg2-eu1-01",
+    "mg2-eu1-02",
+    "mg3-eu1-01",
+    "mg3-eu1-02",
+    "n0"
+  ],
+	"vault-types": [
+		"FILE"
+	],
+	"commands": {
+		"GUI": {
+			"path": "/",
+			"interactive": true,
+			"name": "MLflow GUI",
+			"description": "MLflow with Miniconda and Nimbix Desktop",
+			"machines":[
+		 	 	"",
+     		"mc0-eu1-01",
+     		"mc0-eu1-02",
+      	"mc2-eu1-01",
+      	"mc2-eu1-02",
+      	"mg2-eu1-01",
+      	"mg2-eu1-02",
+ 		  	"mg3-eu1-01",
+      	"mg3-eu1-02",
+      	"n0"
+			],
+			"parameters": {}
+		}
+	}
+}
