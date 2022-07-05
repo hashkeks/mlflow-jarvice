@@ -33,15 +33,10 @@ RUN apt-get -y update && \
 # Intall MLflow
 RUN pip install mlflow[extras]
 
-# Install Miniconda
-# 	https://conda.io/projects/conda/en/latest/user-guide/install/macos.html#install-macos-silent
-RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh && \
-	bash miniconda.sh -b -p /home/nimbix/miniconda
-
 # Clone the MLflow test directory
 RUN git clone https://github.com/mlflow/mlflow /home/nimbix/mlflow
 
-# Expose port 22 for local JARVICE emulation in docker
-EXPOSE 22
-
-
+# AppDef configuration
+COPY scripts /usr/local/scripts
+COPY NAE/AppDef.json /etc/NAE/AppDef.json
+COPY NAE/screenshot.png /etc/NAE/screenshot.png
